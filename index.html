@@ -1,11 +1,166 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Yeseul Portfolio</title>
-  <style>html,body{margin:0;height:100%}iframe{border:0;width:100%;height:100%}</style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Yeseul Choi Bron | Data & Sustainability</title>
+<meta name="description" content="Data analyst and sustainability specialist turning complex data into evidence for climate and social action.">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#1f1f1f;--panel:#2a2a2a;--line:#3a3a3a;--text:#f2f2f2;--muted:#b5b5b5;--accent:#7cc4c9}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:"Noto Sans",Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.6}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+nav{position:fixed;top:0;width:100%;display:flex;justify-content:space-between;align-items:center;padding:14px 5%;background:rgba(31,31,31,.92);border-bottom:1px solid var(--line);z-index:10}
+nav .name{font-weight:700;color:var(--text)}
+nav ul{display:flex;gap:24px;list-style:none}
+nav ul a{color:var(--muted);font-size:.95rem}
+.hero{display:grid;grid-template-columns:1fr 1fr;min-height:100vh}
+.hero-img{background:url("cover.jpg") center/cover,#3b4a55}
+.hero-text{display:flex;flex-direction:column;justify-content:center;padding:120px 8% 60px}
+.hero h1{font-size:clamp(2.4rem,5vw,3.8rem);line-height:1.1;margin-bottom:18px}
+.hero p{font-size:1.15rem;color:var(--muted);max-width:520px;margin-bottom:32px}
+.btns{display:flex;gap:12px;flex-wrap:wrap}
+.btn{padding:12px 22px;border:1px solid var(--text);color:var(--text);font-weight:500}
+.btn.primary{background:var(--text);color:var(--bg)}
+.btn:hover{text-decoration:none;opacity:.85}
+section{padding:90px 8%;max-width:1200px;margin:0 auto}
+h2{font-size:1.8rem;margin-bottom:8px}
+.lead{color:var(--muted);margin-bottom:36px;max-width:700px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:20px}
+.card{background:var(--panel);border:1px solid var(--line);padding:26px;display:flex;flex-direction:column}
+.tag{font-size:.75rem;letter-spacing:.08em;text-transform:uppercase;color:var(--accent);margin-bottom:10px}
+.card h3{font-size:1.15rem;margin-bottom:10px}
+.card p{color:var(--muted);font-size:.95rem;flex-grow:1}
+.card a.more{margin-top:16px;font-weight:500}
+.about{display:grid;grid-template-columns:2fr 1fr;gap:48px}
+.about p{color:var(--muted);margin-bottom:16px}
+.facts h4{font-size:.8rem;text-transform:uppercase;letter-spacing:.08em;color:var(--accent);margin:0 0 6px}
+.facts p{margin-bottom:22px;color:var(--text)}
+.contact{text-align:center;border-top:1px solid var(--line)}
+.contact .btns{justify-content:center;margin-top:24px}
+footer{text-align:center;padding:30px;color:#777;font-size:.85rem}
+@media(max-width:800px){
+.hero{grid-template-columns:1fr}
+.hero-img{min-height:40vh}
+.hero-text{padding:50px 8%}
+nav ul{display:none}
+.about{grid-template-columns:1fr}
+}
+</style>
 </head>
 <body>
-  <iframe src="https://arcg.is/1fqPWy2" allowfullscreen allow="geolocation"></iframe>
+
+<nav>
+  <a class="name" href="#">Yeseul Choi Bron</a>
+  <ul>
+    <li><a href="#work">Work</a></li>
+    <li><a href="#research">Research</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<header class="hero">
+  <div class="hero-img"></div>
+  <div class="hero-text">
+    <h1>Yeseul Choi Bron</h1>
+    <p>Data analyst and sustainability specialist turning complex data into evidence for climate and social action.</p>
+    <div class="btns">
+      <a class="btn primary" href="https://arcg.is/1fqPWy2" target="_blank">View full portfolio</a>
+      <a class="btn" href="cv.pdf" target="_blank">Download CV</a>
+    </div>
+  </div>
+</header>
+
+<section id="work">
+  <h2>Data & Analytics</h2>
+  <p class="lead">At the UN Human Rights Office's Innovation & Analytics Hub, I build tools that help analysts and decision-makers see risk earlier and communicate it better.</p>
+  <div class="grid">
+    <div class="card">
+      <div class="tag">Data storytelling</div>
+      <h3>El Fasher: from early warning to documented violations</h3>
+      <p>An interactive map-based story on the final offensive in North Darfur, Sudan, combining conflict data, open sources, and field-verified information.</p>
+      <a class="more" href="https://innovation.ohchr.org/data-stories/sudan-el-fasher-offensive" target="_blank">View story →</a>
+    </div>
+    <div class="card">
+      <div class="tag">Data storytelling</div>
+      <h3>Elections and Human Rights in East Africa</h3>
+      <p>Tanzania, Uganda and Kenya at three stages of the electoral cycle, built with regional offices to inform early warning.</p>
+      <a class="more" href="TODO_EAST_AFRICA_LINK" target="_blank">View story →</a>
+    </div>
+    <div class="card">
+      <div class="tag">Dashboard</div>
+      <h3>Crisis risk dashboard</h3>
+      <p>An interactive dashboard comparing countries' risk of humanitarian crisis, showing where exposure is high and capacity to cope is low.</p>
+    </div>
+    <div class="card">
+      <div class="tag">Automation</div>
+      <h3>Automating routine reporting</h3>
+      <p>A Power Automate workflow that reads daily incident reports and files them into the team's database, freeing analysts to focus on analysis.</p>
+    </div>
+  </div>
+</section>
+
+<section id="research">
+  <h2>Research & Projects</h2>
+  <p class="lead">Climate adaptation, carbon accounting, and sustainable cities, from fieldwork to peer-reviewed publication.</p>
+  <div class="grid">
+    <div class="card">
+      <div class="tag">Publication · Springer Nature</div>
+      <h3>A community-centred polykatoikia scale framework for superblock transformation in Athens</h3>
+      <p>Dutli, L., Choi, Y., Lee, W., et al. <em>Discover Cities</em> 3, 127 (2026). Open access.</p>
+      <a class="more" href="https://link.springer.com/article/10.1007/s44327-026-00216-0" target="_blank">Read article →</a>
+    </div>
+    <div class="card">
+      <div class="tag">Climate resilience · Athens</div>
+      <h3>Demokatoikia: Kypseli fieldwork</h3>
+      <p>Field mapping, a resident survey and expert interviews on heat, greenery and access in Athens's densest neighbourhood. Presented at the Empa Urban Futures Symposium, Zurich.</p>
+      <a class="more" href="https://urban-futures.empa.ch" target="_blank">Symposium →</a>
+    </div>
+    <div class="card">
+      <div class="tag">Carbon accounting · London</div>
+      <h3>Comparing emissions accounting methods</h3>
+      <p>Borough-level analysis of London's residential emissions under production-based and consumption-based methods, and what the gap means for policy.</p>
+    </div>
+    <div class="card">
+      <div class="tag">Crisis management · Paris</div>
+      <h3>Tourism and climate emergencies</h3>
+      <p>GIS mapping and stakeholder interviews on how Paris tourism should prepare for floods and heatwaves.</p>
+    </div>
+  </div>
+</section>
+
+<section id="about">
+  <h2>About</h2>
+  <div class="about" style="margin-top:28px">
+    <div>
+      <p>I am completing an MSc in Innovation, Human Development and Sustainability at the University of Geneva and work with the Innovation & Analytics Hub at the UN Human Rights Office.</p>
+      <p>Before moving into data and sustainability, I worked as a journalist at The Chosun Ilbo and in corporate communications at Shinsegae in Seoul. That background shapes how I work: rigorous with evidence, and focused on making findings clear to the people who need them.</p>
+    </div>
+    <div class="facts">
+      <h4>Skills</h4>
+      <p>ArcGIS Online & StoryMaps, QGIS, Power BI, Power Automate, carbon accounting, stakeholder research</p>
+      <h4>Languages</h4>
+      <p>English, French, Korean</p>
+      <h4>Based in</h4>
+      <p>Lausanne, Switzerland</p>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <h2>Get in touch</h2>
+  <p class="lead" style="margin:8px auto 0">Open to roles in sustainability, data analysis and climate risk from late 2026.</p>
+  <div class="btns">
+    <a class="btn primary" href="mailto:TODO_EMAIL">Email</a>
+    <a class="btn" href="TODO_LINKEDIN" target="_blank">LinkedIn</a>
+  </div>
+</section>
+
+<footer>© 2026 Yeseul Choi Bron</footer>
+
 </body>
 </html>
